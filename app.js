@@ -32,6 +32,7 @@ const userLogin = require('./controllers/user/userLogin')
 const userLoginAuth = require('./controllers/user/userLoginAuth')
 const userLogout = require('./controllers/user/userLogout')
 
+// tu pue la merde 
 
 const app = express();
 const urlDB = 'mongodb://localhost:27017/blog'
