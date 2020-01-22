@@ -10,7 +10,7 @@ const expressSession = require('express-session');
 const MongoStore = require('connect-mongo');
 const connectFlash = require('connect-flash');
 const {stripTags} = require('./helpers/hbs')
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 
 /*
  * Import Controller
