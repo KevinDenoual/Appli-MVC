@@ -1,0 +1,29 @@
+<section class="section">
+    <div class="container">
+        <form action="/article/update/{{dbArticle._id}}" method="POST" enctype="multipart/form-data">
+        <div>
+            <p>Titre Article Actuel : </br>
+            {{dbArticle.title}}
+            </p>
+            <textarea class="textarea" name="title"></textarea>
+            <script>
+                CKEDITOR.replace('content');
+            </script>
+        </div>
+        <div>
+            <p>Content Article Actuel : </br>
+            {{dbArticle.content}}
+            </p>
+            <textarea class="textarea" name="content"></textarea>
+            <script>
+                CKEDITOR.replace('content');
+            </script>
+        </div>
+    </div>
+    <div class="field is-grouped">
+        <div class="control">
+            <button type="submit" class="button is-link">Enregistrer</button>
+        </div>
+    </div>
+    </form>
+</section>
